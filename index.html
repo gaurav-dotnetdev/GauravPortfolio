@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaurav Yadav | Senior .NET Core Developer Portfolio</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Portfolio of Gaurav Yadav, Senior .NET Core Developer with 6+ years of experience building scalable web applications, REST APIs, and enterprise solutions.">
+  <meta name="keywords" content="Gaurav Yadav, Senior .NET Core Developer, ASP.NET Core, C#, Web API, SQL Server, EF Core, REST API, New Delhi India">
+  <meta name="author" content="Gaurav Yadav">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gaurav Yadav | Senior .NET Core Developer">
+  <meta property="og:description" content="Senior .NET Core Developer building scalable web applications, REST APIs and enterprise solutions.">
+  <meta property="og:url" content="https://github.com/gaurav-dotnetdev/">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <!-- JSON-LD Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Gaurav Yadav",
+    "jobTitle": "Senior .NET Core Developer",
+    "email": "gauravbusy12@gmail.com",
+    "telephone": "+91-8860583717",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "New Delhi",
+      "addressCountry": "India"
+    },
+    "knowsAbout": ["C#", ".NET 6", "ASP.NET Core", "ASP.NET Core Web API", "SQL Server", "EF Core", "REST APIs", "JWT Authentication", "SOLID Principles"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">
+        <span>Gaurav Yadav</span>
+        <span class="logo-badge">.NET Core</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#architecture" class="nav-link">Architecture</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Dark / Light Theme Toggle -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-moon" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+          </svg>
+          <svg class="icon-sun" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+          </svg>
+        </button>
+
+        <!-- Resume Download CTA -->
+        <!-- NOTE: Replace 'assets/docs/Gaurav_Yadav_Resume.pdf' with your actual PDF resume file path -->
+        <a href="assets/docs/Gaurav_Yadav_Resume.pdf" download="Gaurav_Yadav_Resume.pdf" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
+          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          Resume
+        </a>
+
+        <!-- Mobile Nav Hamburger -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         1. HERO SECTION
+         ========================================================================== -->
+    <section class="hero" id="hero">
+      <div class="container hero-content">
+        <div class="hero-text reveal reveal-left">
+          <div class="hero-status">
+            <span class="status-dot pulse-dot"></span>
+            Available for Senior .NET Core Roles
+          </div>
+
+          <div class="hero-name">Hello, I'm Gaurav Yadav</div>
+          <h1 class="hero-title">
+            Senior <span class="gradient-text">.NET Core</span> Developer
+          </h1>
+
+          <p class="hero-tagline">
+            Senior .NET Core Developer building scalable web applications, REST APIs and enterprise solutions.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              View Projects
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+            
+            <!-- Resume Download Button -->
+            <!-- NOTE: Place your actual resume PDF in assets/docs/Gaurav_Yadav_Resume.pdf -->
+            <a href="assets/docs/Gaurav_Yadav_Resume.pdf" download="Gaurav_Yadav_Resume.pdf" class="btn btn-secondary">
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              Download Resume
+            </a>
+
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="meta-item">
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <span><strong>6+ Years</strong> Experience</span>
+            </div>
+            <div class="meta-item">
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              <span>New Delhi, India</span>
+            </div>
+            <div class="meta-item">
+              <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <a href="mailto:gauravbusy12@gmail.com" class="hover:text-primary">gauravbusy12@gmail.com</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-right">
+          <div class="code-card float-animation">
+            <div class="code-card-header">
+              <div class="window-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="code-card-title">ApiService.cs</div>
+            </div>
+            <div class="code-card-body">
+              <p><span class="code-keyword">namespace</span> Enterprise.Api.Services;</p>
+              <br>
+              <p><span class="code-keyword">public class</span> <span class="code-class">EnterpriseApiService</span> : <span class="code-class">IApiService</span></p>
+              <p>{</p>
+              <p>&nbsp;&nbsp;<span class="code-keyword">private readonly</span> <span class="code-class">IDbContext</span> <span class="code-property">_db</span>;</p>
+              <br>
+              <p>&nbsp;&nbsp;<span class="code-comment">// 6+ Years .NET Core Architecture</span></p>
+              <p>&nbsp;&nbsp;<span class="code-keyword">public async</span> Task&lt;<span class="code-class">IResult</span>&gt; ProcessBooking()</p>
+              <p>&nbsp;&nbsp;{</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">await</span> <span class="code-property">_db</span>.ExecuteStoredProcedureAsync();</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> Results.Ok(<span class="code-string">"High Performance REST API"</span>);</p>
+              <p>&nbsp;&nbsp;}</p>
+              <p>}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         2. ABOUT ME SECTION
+         ========================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Senior .NET Core Software Engineer</h2>
+          <p class="section-subtitle">Dedicated to engineering robust backend architectures, high-volume REST APIs, and optimized SQL Server solutions.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal reveal-left">
+            <div class="about-card">
+              <p>
+                I am a <strong>Senior .NET Core Developer</strong> based in New Delhi, India, with over <strong>6+ years of professional experience</strong> in backend engineering, API development, and enterprise database systems.
+              </p>
+              <p>
+                Throughout my career at software engineering companies like <em>Teraclab Pvt. Ltd.</em>, <em>TechReflects Pvt. Ltd.</em>, and <em>BSD InfoTech Pvt. Ltd.</em>, I have specialized in building robust software solutions using C#, .NET 6, ASP.NET Core, REST APIs, Entity Framework Core, and SQL Server.
+              </p>
+              <p>
+                My expertise spans full-stack solution design, payment module integration, service booking systems, stored procedures, triggers, LINQ query optimization, JWT authentication, Dependency Injection, and production IIS deployment.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-highlights reveal reveal-right">
+            <div class="highlight-box">
+              <div class="highlight-number">6+</div>
+              <div class="highlight-label">Years of Commercial Experience</div>
+            </div>
+            <div class="highlight-box">
+              <div class="highlight-number">.NET 6</div>
+              <div class="highlight-label">& ASP.NET Core API Expertise</div>
+            </div>
+            <div class="highlight-box">
+              <div class="highlight-number">3</div>
+              <div class="highlight-label">Software Engineering Companies</div>
+            </div>
+            <div class="highlight-box">
+              <div class="highlight-number">SQL Server</div>
+              <div class="highlight-label">Stored Procedures & Optimization</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. TECHNICAL SKILLS SECTION
+         ========================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Technical Skills</span>
+          <h2 class="section-title">Core Technology Stack</h2>
+          <p class="section-subtitle">Proven technologies and tools utilized in enterprise software development.</p>
+        </div>
+
+        <div class="skills-container">
+          <!-- Languages & Core Frameworks -->
+          <div class="skills-category reveal reveal-scale">
+            <h3 class="skills-category-title">
+              <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+              Languages & Core Frameworks
+            </h3>
+            <div class="skills-chips">
+              <span class="badge">C#</span>
+              <span class="badge">.NET 6</span>
+              <span class="badge">ASP.NET Core</span>
+              <span class="badge">ASP.NET Core Web API</span>
+              <span class="badge">ASP.NET</span>
+              <span class="badge">REST APIs</span>
+            </div>
+          </div>
+
+          <!-- Database & ORM -->
+          <div class="skills-category reveal reveal-scale">
+            <h3 class="skills-category-title">
+              <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/></svg>
+              Database & ORM Layer
+            </h3>
+            <div class="skills-chips">
+              <span class="badge">SQL Server</span>
+              <span class="badge">Entity Framework</span>
+              <span class="badge">EF Core</span>
+              <span class="badge">LINQ</span>
+              <span class="badge">ADO.NET</span>
+              <span class="badge">Stored Procedures</span>
+              <span class="badge">Triggers</span>
+            </div>
+          </div>
+
+          <!-- Architecture, Security & Testing -->
+          <div class="skills-category reveal reveal-scale">
+            <h3 class="skills-category-title">
+              <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              Architecture & Security
+            </h3>
+            <div class="skills-chips">
+              <span class="badge">JWT Authentication</span>
+              <span class="badge">Authorization</span>
+              <span class="badge">Dependency Injection</span>
+              <span class="badge">SOLID Principles</span>
+              <span class="badge">Design Patterns</span>
+              <span class="badge">Unit Testing</span>
+            </div>
+          </div>
+
+          <!-- Frontend, Tools & Deployment -->
+          <div class="skills-category reveal reveal-scale">
+            <h3 class="skills-category-title">
+              <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+              Frontend, Tools & Deployment
+            </h3>
+            <div class="skills-chips">
+              <span class="badge">JavaScript</span>
+              <span class="badge">jQuery</span>
+              <span class="badge">Ajax</span>
+              <span class="badge">HTML5</span>
+              <span class="badge">CSS3</span>
+              <span class="badge">Git</span>
+              <span class="badge">Visual Studio</span>
+              <span class="badge">IIS</span>
+              <span class="badge">Production Deployment</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. PROFESSIONAL EXPERIENCE SECTION
+         ========================================================================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Career History</span>
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="section-subtitle">6+ years of engineering experience across progressive development roles.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Role 1 -->
+          <div class="timeline-item reveal reveal-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Software Engineer (.NET Core)</h3>
+                  <div class="company-name">Teraclab Pvt. Ltd.</div>
+                </div>
+                <div class="timeline-date">Nov 2022 – Present</div>
+              </div>
+              <div class="timeline-location">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                New Delhi, India
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 2 -->
+          <div class="timeline-item reveal reveal-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">.NET Developer</h3>
+                  <div class="company-name">TechReflects Pvt. Ltd.</div>
+                </div>
+                <div class="timeline-date">Jan 2022 – Oct 2022</div>
+              </div>
+              <div class="timeline-location">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                New Delhi, India
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 3 -->
+          <div class="timeline-item reveal reveal-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">.NET Developer</h3>
+                  <div class="company-name">BSD InfoTech Pvt. Ltd.</div>
+                </div>
+                <div class="timeline-date">Oct 2019 – Dec 2021</div>
+              </div>
+              <div class="timeline-location">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                New Delhi, India
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. FEATURED PROJECTS SECTION
+         ========================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Key Deliverables</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Commercial systems and web applications engineered for performance and scalability.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: CarVaidya -->
+          <article class="project-card reveal reveal-scale">
+            <div class="project-top">
+              <div class="project-meta">
+                <span class="badge">Enterprise Platform</span>
+                <span class="project-date">March 2023 – Present</span>
+              </div>
+              <h3 class="project-title">CarVaidya</h3>
+              <div class="project-tagline">Service booking and payment-related platform</div>
+              
+              <ul class="project-bullets">
+                <li>Engineered ASP.NET Core REST API development for backend workflows.</li>
+                <li>Built service booking modules and integrated payment-related functionality.</li>
+                <li>Designed SQL Server database schemas, high-performance Stored Procedures, and LINQ queries.</li>
+                <li>Utilized Entity Framework / EF Core ORM layer with Dependency Injection pattern.</li>
+                <li>Implemented secure JWT authentication and role-based authorization modules.</li>
+                <li>Developed interactive client-side functionality using JavaScript, jQuery, and Ajax.</li>
+                <li>Executed end-to-end production deployment on IIS web server environment.</li>
+              </ul>
+            </div>
+
+            <div class="project-tech">
+              <span class="badge">ASP.NET Core REST API</span>
+              <span class="badge">EF Core</span>
+              <span class="badge">SQL Server</span>
+              <span class="badge">JWT Auth</span>
+              <span class="badge">JavaScript</span>
+              <span class="badge">jQuery</span>
+              <span class="badge">IIS</span>
+            </div>
+          </article>
+
+          <!-- Project 2: Steapl -->
+          <article class="project-card reveal reveal-scale">
+            <div class="project-top">
+              <div class="project-meta">
+                <span class="badge">EdTech Platform</span>
+                <span class="project-date">Nov 2022 – Feb 2023</span>
+              </div>
+              <h3 class="project-title">Steapl</h3>
+              <div class="project-tagline">Online teaching and training platform</div>
+              
+              <ul class="project-bullets">
+                <li>Architected backend services using .NET 6, C#, ASP.NET Core, and Web API.</li>
+                <li>Executed SQL Server database development and REST API endpoint design.</li>
+                <li>Conducted performance optimization across database queries and web API endpoints.</li>
+                <li>Performed client requirement analysis and technical issue resolution for core modules.</li>
+              </ul>
+            </div>
+
+            <div class="project-tech">
+              <span class="badge">.NET 6</span>
+              <span class="badge">C#</span>
+              <span class="badge">ASP.NET Core</span>
+              <span class="badge">Web API</span>
+              <span class="badge">SQL Server</span>
+              <span class="badge">REST APIs</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. ARCHITECTURE & TECHNICAL EXPERTISE SECTION
+         ========================================================================== -->
+    <section class="section" id="architecture">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Engineering Focus</span>
+          <h2 class="section-title">Architecture & Technical Expertise</h2>
+          <p class="section-subtitle">Core engineering methodologies applied across all project developments.</p>
+        </div>
+
+        <div class="arch-grid">
+          <div class="arch-card reveal reveal-scale">
+            <div class="arch-icon">
+              <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+            </div>
+            <h3 class="arch-title">REST API Architecture</h3>
+            <p class="arch-desc">Designing scalable, stateless ASP.NET Core Web APIs using RESTful standards, clear HTTP verbs, structured responses, and loose coupling.</p>
+          </div>
+
+          <div class="arch-card reveal reveal-scale">
+            <div class="arch-icon">
+              <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/></svg>
+            </div>
+            <h3 class="arch-title">Database & Query Tuning</h3>
+            <p class="arch-desc">Expertise in SQL Server schema design, writing optimized Stored Procedures, Triggers, indexing strategies, and LINQ execution plans.</p>
+          </div>
+
+          <div class="arch-card reveal reveal-scale">
+            <div class="arch-icon">
+              <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+            </div>
+            <h3 class="arch-title">Enterprise Security & Auth</h3>
+            <p class="arch-desc">Implementing secure token-based JWT authentication, claims-based authorization, request payload validation, and CORS policies.</p>
+          </div>
+
+          <div class="arch-card reveal reveal-scale">
+            <div class="arch-icon">
+              <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+            </div>
+            <h3 class="arch-title">SOLID & Clean Code</h3>
+            <p class="arch-desc">Applying SOLID design principles, Dependency Injection, repository pattern, and unit testing practices for maintainable enterprise codebases.</p>
+          </div>
+
+          <div class="arch-card reveal reveal-scale">
+            <div class="arch-icon">
+              <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+            <h3 class="arch-title">Production IIS Deployment</h3>
+            <p class="arch-desc">Configuring IIS Web Servers, application pools, environment configurations, logs, and live environment release management.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. EDUCATION SECTION
+         ========================================================================== -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">Academic qualifications in Computer Applications.</p>
+        </div>
+
+        <div class="education-grid">
+          <div class="edu-card reveal reveal-scale">
+            <div class="edu-icon">
+              <svg width="26" height="26" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 01-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+            </div>
+            <div>
+              <div class="edu-degree">MCA</div>
+              <div class="edu-institution">Master of Computer Applications — IGNOU</div>
+            </div>
+          </div>
+
+          <div class="edu-card reveal reveal-scale">
+            <div class="edu-icon">
+              <svg width="26" height="26" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 01-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+            </div>
+            <div>
+              <div class="edu-degree">BCA</div>
+              <div class="edu-institution">Bachelor of Computer Applications — IGNOU</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. CONTACT & PROFILES SECTION
+         ========================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Contact & Social Links</h2>
+          <p class="section-subtitle">Reach out for senior developer roles, technical consultations, or project inquiries.</p>
+        </div>
+
+        <div class="contact-container">
+          <div class="contact-info reveal reveal-left">
+            <!-- Email Card -->
+            <a href="mailto:gauravbusy12@gmail.com" class="contact-card">
+              <div class="contact-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">Direct Email</div>
+                <div class="contact-value">gauravbusy12@gmail.com</div>
+              </div>
+            </a>
+
+            <!-- Phone Card -->
+            <a href="tel:+918860583717" class="contact-card">
+              <div class="contact-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">Phone Call</div>
+                <div class="contact-value">+91-8860583717</div>
+              </div>
+            </a>
+
+            <!-- Location Card -->
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">Location</div>
+                <div class="contact-value">New Delhi, India</div>
+              </div>
+            </div>
+
+            <!-- Social Media Buttons -->
+            <div class="contact-socials">
+              <!-- NOTE: Replace 'https://github.com/your-username' with your actual GitHub URL -->
+              <a href="https://github.com/gaurav-dotnetdev" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub Profile
+              </a>
+
+              <!-- NOTE: Replace 'https://linkedin.com/in/your-username' with your actual LinkedIn URL -->
+              <a href="https://www.linkedin.com/in/gaurav-yadav-783043185/ " target="_blank" rel="noopener noreferrer" class="social-btn">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                LinkedIn Profile
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-box reveal reveal-right">
+            <h3 class="contact-box-title">Send Direct Email</h3>
+            <p class="contact-box-subtitle">Click below to send an email inquiry directly to Gaurav Yadav.</p>
+
+            <a href="mailto:gauravbusy12@gmail.com?subject=Senior%20.NET%20Core%20Developer%20Inquiry" class="btn btn-primary quick-mail-btn">
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              Open Email App (gauravbusy12@gmail.com)
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="logo">
+        <span>Gaurav Yadav</span>
+        <span class="logo-badge">Senior .NET Developer</span>
+      </div>
+
+      <p class="footer-text">
+        © <span id="current-year">2026</span> Gaurav Yadav. Built with standard HTML5, CSS3 & JavaScript. Ready for GitHub Pages.
+      </p>
+
+      <p class="footer-note">
+        6+ Years Experience • ASP.NET Core & SQL Server Specialist • New Delhi, India
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
