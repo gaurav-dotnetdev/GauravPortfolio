@@ -1,0 +1,11 @@
+========================================================================
+GAURAV YADAV PORTFOLIO - RESUME PLACEHOLDER
+========================================================================
+
+Please place your actual PDF resume file in this folder and name it:
+
+    Gaurav_Yadav_Resume.pdf
+
+Path: assets/docs/Gaurav_Yadav_Resume.pdf
+
+Once added, the "Download Resume" buttons in the navigation header and hero section will automatically download your actual resume file.
